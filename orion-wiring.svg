@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+  <rect width="1200" height="820" fill="#0b1220" rx="18"/>
+  <text x="600" y="42" font-family="Arial,sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#e8f1ff">ORION — Simplified Wiring Overview</text>
+  <text x="600" y="70" font-family="Arial,sans-serif" font-size="15" text-anchor="middle" fill="#9fb3c8">Signal and power overview only • verify exact board pinouts before wiring</text>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#6cc8ff"/></marker><marker id="power" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#ffbf69"/></marker></defs>
+  <rect x="60" y="120" width="280" height="150" rx="12" fill="#17263b" stroke="#6cc8ff" stroke-width="2"/>
+  <text x="200" y="153" fill="#ffffff" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Laptop / PC</text>
+  <text x="200" y="183" fill="#d5e6f7" font-family="Arial" font-size="16" text-anchor="middle">Python • OpenCV • GUI</text>
+  <text x="200" y="210" fill="#d5e6f7" font-family="Arial" font-size="15" text-anchor="middle">USB webcam input</text>
+  <text x="200" y="238" fill="#d5e6f7" font-family="Arial" font-size="15" text-anchor="middle">USB data to ESP32</text>
+  <rect x="430" y="120" width="280" height="150" rx="12" fill="#17263b" stroke="#6cc8ff" stroke-width="2"/>
+  <text x="570" y="153" fill="#ffffff" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">ESP32</text>
+  <text x="570" y="183" fill="#d5e6f7" font-family="Arial" font-size="16" text-anchor="middle">GPIO21 → SDA</text>
+  <text x="570" y="208" fill="#d5e6f7" font-family="Arial" font-size="16" text-anchor="middle">GPIO22 → SCL</text>
+  <text x="570" y="237" fill="#d5e6f7" font-family="Arial" font-size="14" text-anchor="middle">3V3 logic • common GND</text>
+  <rect x="800" y="120" width="330" height="150" rx="12" fill="#17263b" stroke="#6cc8ff" stroke-width="2"/>
+  <text x="965" y="153" fill="#ffffff" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">PCA9685</text>
+  <text x="965" y="183" fill="#d5e6f7" font-family="Arial" font-size="16" text-anchor="middle">VCC = logic supply</text>
+  <text x="965" y="208" fill="#d5e6f7" font-family="Arial" font-size="16" text-anchor="middle">V+ = separate servo rail</text>
+  <text x="965" y="237" fill="#d5e6f7" font-family="Arial" font-size="14" text-anchor="middle">CH0 / CH1 / CH2</text>
+  <path d="M340 190 H425" stroke="#6cc8ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M710 190 H795" stroke="#6cc8ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="820" y="340" width="135" height="100" rx="10" fill="#24344b" stroke="#9cc7ff" stroke-width="2"/><text x="887" y="377" fill="#fff" font-family="Arial" font-size="16" text-anchor="middle">CH0</text><text x="887" y="403" fill="#d5e6f7" font-family="Arial" font-size="15" text-anchor="middle">MG996R</text><text x="887" y="423" fill="#d5e6f7" font-family="Arial" font-size="13" text-anchor="middle">Pan</text>
+  <rect x="980" y="340" width="135" height="100" rx="10" fill="#24344b" stroke="#9cc7ff" stroke-width="2"/><text x="1047" y="377" fill="#fff" font-family="Arial" font-size="16" text-anchor="middle">CH1</text><text x="1047" y="403" fill="#d5e6f7" font-family="Arial" font-size="15" text-anchor="middle">MG996R</text><text x="1047" y="423" fill="#d5e6f7" font-family="Arial" font-size="13" text-anchor="middle">Tilt</text>
+  <rect x="900" y="475" width="215" height="100" rx="10" fill="#24344b" stroke="#9cc7ff" stroke-width="2"/><text x="1007" y="510" fill="#fff" font-family="Arial" font-size="16" text-anchor="middle">CH2 • MG90S</text><text x="1007" y="536" fill="#d5e6f7" font-family="Arial" font-size="14" text-anchor="middle">Guarded actuator</text><text x="1007" y="556" fill="#ffcf8a" font-family="Arial" font-size="12" text-anchor="middle">Linkage disconnected for test</text>
+  <path d="M965 270 V305 H887 V335" stroke="#6cc8ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/><path d="M965 305 H1047 V335" stroke="#6cc8ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/><path d="M965 270 V310 H1007 V470" stroke="#6cc8ff" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <rect x="60" y="340" width="650" height="230" rx="12" fill="#211d25" stroke="#ffbf69" stroke-width="2"/>
+  <text x="385" y="375" fill="#ffcf8a" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">Servo Power Path (separate from logic)</text>
+  <rect x="95" y="410" width="145" height="70" rx="8" fill="#3a2c20" stroke="#ffbf69"/><text x="167" y="439" fill="#fff" font-family="Arial" font-size="16" text-anchor="middle">Battery / PSU</text><text x="167" y="460" fill="#ffcf8a" font-family="Arial" font-size="13" text-anchor="middle">rated for stall current</text>
+  <rect x="290" y="410" width="110" height="70" rx="8" fill="#3a2c20" stroke="#ffbf69"/><text x="345" y="450" fill="#fff" font-family="Arial" font-size="17" text-anchor="middle">Fuse</text>
+  <rect x="450" y="410" width="210" height="70" rx="8" fill="#3a2c20" stroke="#ffbf69"/><text x="555" y="439" fill="#fff" font-family="Arial" font-size="16" text-anchor="middle">Hardware E-stop</text><text x="555" y="460" fill="#ffcf8a" font-family="Arial" font-size="13" text-anchor="middle">cuts servo power independently</text>
+  <path d="M240 445 H285" stroke="#ffbf69" stroke-width="3" fill="none" marker-end="url(#power)"/><path d="M400 445 H445" stroke="#ffbf69" stroke-width="3" fill="none" marker-end="url(#power)"/><path d="M660 445 H760 V285 H850" stroke="#ffbf69" stroke-width="3" fill="none" marker-end="url(#power)"/>
+  <text x="385" y="520" fill="#f6e6d1" font-family="Arial" font-size="14" text-anchor="middle">Common ground required between ESP32 and PCA9685.</text><text x="385" y="543" fill="#f6e6d1" font-family="Arial" font-size="14" text-anchor="middle">Do not power servos from ESP32 3V3.</text>
+  <rect x="60" y="620" width="1070" height="145" rx="12" fill="#3a1119" stroke="#ff5968" stroke-width="2"/>
+  <text x="595" y="655" fill="#ff9ca5" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle">REQUIRED BEFORE SERVO POWER-UP</text>
+  <text x="595" y="686" fill="#fff0f1" font-family="Arial" font-size="16" text-anchor="middle">The supplied screenshot omits PCA9685 OE handling and physical E-stop wiring.</text>
+  <text x="595" y="713" fill="#fff0f1" font-family="Arial" font-size="16" text-anchor="middle">Confirm OE pull-up/logic, e-stop polarity, fuse, supply, capacitor rating, and board pinouts.</text>
+  <text x="595" y="740" fill="#fff0f1" font-family="Arial" font-size="16" text-anchor="middle">Use a guarded blunt demo mechanism only; never attach sharp projectiles.</text>
+</svg>

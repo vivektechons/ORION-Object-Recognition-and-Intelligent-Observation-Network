@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+config.json
+logs/
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python cache
+__pycache__/
+*.py[cod]
